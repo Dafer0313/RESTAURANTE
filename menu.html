@@ -35,69 +35,69 @@
 
         <br>
 
-        <div class="listadeproductos">
-            <div class="item">
-                <img src="img/img1.jpg" alt="">
+        <div class="listadeproductos" id="products">
+            <div class="product" data-id="1" data-name="CALDO CON AREPA" data-price="12.000">
+                <img src="img/img1.jpg" width="140px" height="140px" alt="">
                 <h2>CALDO CON AREPA</h2>
+                <div class="precio">$12.000</div>
+                <br>
+                <button onclick="addToCart(1)">Añadir al carrito</button>
+            </div>
+
+            <div class="product" data-id="2" data-name="ARROZ Y PECHUGA" data-price="15.000">
+                <img src="img/img2.jpg" width="140px" height="140px" alt="">
+                <h2>ARROZ Y PECHUGA</h2>
                 <div class="precio">$15.000</div>
                 <br>
-                <button class="addcart">Añadir al carrito</button>
+                <button onclick="addToCart(2)">Añadir al carrito</button>
             </div>
 
-            <div class="item">
-                <img src="img/img2.jpg" alt="">
-                <h2>ARROZ CON POLLO Y PECHUGA</h2>
-                <div class="precio">$20.000</div>
-                <br>
-                <button class="addcart">Añadir al carrito</button>
-            </div>
-
-            <div class="item">
-                <img src="img/img3.jpg" alt="">
+            <div class="product">
+                <img src="img/img3.jpg" width="140px" height="140px" alt="">
                 <h2>BANDEJA PAISA</h2>
                 <div class="precio">$20.000</div>
                 <br>
-                <button class="addcart">Añadir al carrito</button>
+                <button onclick="addToCart(3)">Añadir al carrito</button>
             </div>
 
-            <div class="item">
-                <img src="img/img4.jpg" alt="">
+            <div class="product">
+                <img src="img/img4.jpg" width="140px" height="140px" alt="">
                 <h2>SOPA DE PESCADO</h2>
-                <div class="precio">$20.000</div>
+                <div class="precio">$22.000</div>
                 <br>
-                <button class="addcart">Añadir al carrito</button>
+                <button onclick="addToCart(4)">Añadir al carrito</button>
             </div>
 
-            <div class="item">
-                <img src="img/img5.jpg" alt="">
+            <div class="product">
+                <img src="img/img5.jpg" width="140px" height="140px" alt="">
                 <h2>SOPA DE FRIJOES</h2>
-                <div class="precio">$20.000</div>
+                <div class="precio">$18.000</div>
                 <br>
-                <button class="addcart">Añadir al carrito</button>
+                <button onclick="addToCart(5)">Añadir al carrito</button>
             </div>
 
-            <div class="item">
-                <img src="img/img6.jpg" alt="">
+            <div class="product">
+                <img src="img/img6.jpg" width="140px" height="140px" alt="">
                 <h2>PESCADO FRITO</h2>
-                <div class="precio">$20.000</div>
+                <div class="precio">$16.000</div>
                 <br>
-                <button class="addcart">Añadir al carrito</button>
+                <button onclick="addToCart(6)">Añadir al carrito</button>
             </div>
 
-            <div class="item">
-                <img src="img/img7.jpg" alt="">
+            <div class="product">
+                <img src="img/img7.jpg" width="140px" height="140px" alt="">
                 <h2>SANCOCHO</h2>
-                <div class="precio">$20.000</div>
+                <div class="precio">$10.000</div>
                 <br>
-                <button class="addcart">Añadir al carrito</button>
+                <button onclick="addToCart(7)">Añadir al carrito</button>
             </div>
 
-            <div class="item">
-                <img src="img/img8.jpg" alt="">
-                <h2>SOPA DE MONDONGO</h2>
-                <div class="precio">$20.000</div>
+            <div class="product">
+                <img src="img/img8.jpg" width="140px" height="140px" alt="">
+                <h2>MONDONGO</h2>
+                <div class="precio">$25.000</div>
                 <br>
-                <button class="addcart">Añadir al carrito</button>
+                <button onclick="addToCart(8)">Añadir al carrito</button>
             </div>
 
         </div>
@@ -106,17 +106,21 @@
 
     <div class="carttab">
         <h1>CARRITO</h1>
-        
+
         <div class="listadecarrito">
-           
+            
+            <ul id="cart"></ul>
+            <p>Total: $<span id="total">0</span></p>
+
         </div>
         
         <div class="btn">
             <button class="cerrar">CERRAR</button>
-            <button class="verificar">VERIFICAR</button>
+            <button class="comprar" onclick="redireccion()">COMPRAR</button>
         </div>
     </div>
 
+    <br>
 
 <footer>
     <h1>VIEJO VALERIO. TODOS LOS DERECHOS SON RESERVADOS</h1>

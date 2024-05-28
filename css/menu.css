@@ -49,7 +49,7 @@ header .icon-cart span{
 
 }
 
-.listadeproductos .item img{
+.listadeproductos .product img{
     width: 90%;
     filter: drop-shadow(0 50px 28px #37483ecf );
 }
@@ -60,23 +60,23 @@ header .icon-cart span{
     gap: 20px;
 }
 
-.listadeproductos .item{
+.listadeproductos .product{
     background-color: aliceblue;
     padding: 20px;
     border-radius: 20px;
 }
 
-.listadeproductos .item h2{
+.listadeproductos .product h2{
     font-weight: 500;
     font-size: large;
 }
 
-.listadeproductos .item .precio{
+.listadeproductos .product .precio{
     letter-spacing: 7px;
     font-size: small;
 }
 
-.listadeproductos .item button{
+.listadeproductos .product button{
     background-color: #000900;
     color: aliceblue;
     padding: 5px 10px;
@@ -128,11 +128,11 @@ body.showcart .container{
     background-color: white;
 }
 
-.carttab .listadecarrito .item img{
+.carttab .listadecarrito .product img{
     width: 100%;
 }
 
-.carttab .listadecarrito .item{
+.carttab .listadecarrito .product{
     display: grid;
     grid-template-columns: 70px 150px 50px 1fr;
     gap: 10px;
