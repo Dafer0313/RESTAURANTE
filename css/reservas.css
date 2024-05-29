@@ -38,18 +38,3 @@ body{
 #reserva{
     margin-right: 30px;
 }
-
-h1{
-    text-align: center;
-}
-
-.banner{
-    display: flex;
-    margin-left: 350px;
-    margin-right: 250px;
-}
-
-.texto{
-    margin-left: 50px;
-    margin-right: 170px;
-}
