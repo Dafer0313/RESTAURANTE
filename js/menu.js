@@ -3,10 +3,6 @@ let closecart = document.querySelector(".cerrar");
 let body = document.querySelector("body");
 let cart = [];
 
-function redireccion(){
-    location.href = "factura.html"
-}
-
 
 const products = [
   { id: 1, name: "CALDO CON AREPA", price: 12000 },
@@ -19,11 +15,13 @@ const products = [
   { id: 8, name: "MONDONGO", price: 25000 }
 ];
 
+
 function addToCart(productId) {
   const product = products.find((p) => p.id === productId);
   cart.push(product);
   updateCartDisplay();
 }
+
 
 function removeFromCart(productId) {
     cart = cart.filter(product => product.id !== productId);
@@ -50,6 +48,10 @@ function updateCartDisplay() {
   totalElement.textContent = total;
 }
 
+function goToInvoice() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+  window.location.href = "factura.html";
+}
 
 
 

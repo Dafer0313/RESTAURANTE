@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <link rel="stylesheet" href="css/factura.css">
+</head>
+<body>
+
+<header>
+    <h1 style="text-align:center;">RESTAURANTE VIEJO VALERIO 2.0</h1>
+</header>
+||
+
+
+
+<div class="factura">
+    <h2>FACTURA</h2>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name" />
+            <br>
+       
+        <br>
+       
+            <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" name="user_direccion" />
+            <br>
+        <br>
+        
+            <label for="telefono">Telefono:</label>
+            <input type="number" id="telefono" name="user_phone" />
+            
+
+
+            <div id="invoice">
+                <h2>Pedidos:</h2>
+                <ul id="invoice-items"></ul>
+                <p>Total Factura: $<span id="invoice-total">0</span></p>
+            </div>
+
+
+
+
+
+            <button onclick="validateForm()">REALIZAR PEDIDO</button>
+            <BR></BR>
+            
+</div>
+
+
+
+
+
+
+
+
+<footer>
+    <h1>VIEJO VALERIO. TODOS LOS DERECHOS SON RESERVADOS</h1>
+</footer>
+
+<script src="js/factura.js"></script>    
+</body>
+</html>
