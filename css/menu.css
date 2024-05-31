@@ -23,7 +23,7 @@ span{
 }
 
 header{
-    background-color: aqua;
+    background-color: #f5903d;
     margin-bottom: 20px;
     width: 100%;
     border-bottom: 2px solid;
@@ -189,7 +189,7 @@ a {
 
 
 footer{
-    background-color: aqua;
+    background-color: #f5903d;
     text-align: center;
     height: 60px;
     padding: 1em 0;

@@ -1,5 +1,5 @@
 footer {
-    background-color: aqua;
+    background-color: #f5903d;
     width: 100%;
     margin: 0;
     position: absolute;
@@ -9,7 +9,7 @@ footer {
 }
 
 header {
-    background-color: aqua;
+    background-color: #f5903d;
     margin-bottom: px;
     width: 100%;
     border-bottom: 2px solid;
